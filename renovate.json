@@ -1,0 +1,14 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "regexManagers": [
+    {
+      "description": "Update Tanka Helm chartfile.yaml",
+      "fileMatch": ["(^|/)chartfile\\.yaml$"],
+      "matchStrings": [
+        "renovate: depName=(?<depName>\\S+) registryUrl=(?<registryUrl>\\S+)\\s+(?:version|tag):\\s+[\"']?(?<currentValue>[^\\s\"']+)[\"']?"
+      ],
+      "datasourceTemplate": "helm",
+      "versioningTemplate": "helm"
+    }
+  ]
+}
