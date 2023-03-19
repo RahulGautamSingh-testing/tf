@@ -10,5 +10,6 @@
       "datasourceTemplate": "helm",
       "versioningTemplate": "helm"
     }
-  ]
+  ],
+  "automerge": true
 }
